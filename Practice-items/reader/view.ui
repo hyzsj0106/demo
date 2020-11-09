@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>541</width>
+    <height>424</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RCQ读者书库--读书使人进步</string>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>501</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>抓取设置</string>
+    </property>
+    <widget class="QLabel" name="label_time">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>70</y>
+       <width>130</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>请选择抓取期数:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_dir">
+     <property name="geometry">
+      <rect>
+       <x>25</x>
+       <y>30</y>
+       <width>130</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>请选择保存路径:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_dir">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>28</y>
+       <width>230</width>
+       <height>21</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_time">
+     <property name="geometry">
+      <rect>
+       <x>168</x>
+       <y>68</y>
+       <width>70</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>2019-12</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_sure">
+     <property name="geometry">
+      <rect>
+       <x>390</x>
+       <y>65</y>
+       <width>92</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>确定</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_option">
+     <property name="geometry">
+      <rect>
+       <x>422</x>
+       <y>27</y>
+       <width>60</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>选择</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_tips">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>70</y>
+       <width>130</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Century</family>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>(期数范围 01-24)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>160</y>
+      <width>501</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab_left">
+     <attribute name="title">
+      <string>按期数显示</string>
+     </attribute>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>7</y>
+        <width>480</width>
+        <height>160</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOn</enum>
+      </property>
+      <column>
+       <property name="text">
+        <string>期数</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>名称</string>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_right">
+     <attribute name="title">
+      <string>按名称显示</string>
+     </attribute>
+     <widget class="QListWidget" name="listWidget">
+      <property name="geometry">
+       <rect>
+        <x>7</x>
+        <y>7</y>
+        <width>480</width>
+        <height>160</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>541</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
